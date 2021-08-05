@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import Avatar from "@material-ui/core/Avatar";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,10 +32,18 @@ const useStyles = makeStyles((theme) => ({
   container_logo: {
     display: "flex",
   },
+  square: {
+    cursor: "pointer",
+  },
 }));
 
 export const NavbarHomeScreen = () => {
   const classes = useStyles();
+  let history = useHistory();
+
+  const goToProfile = () => {
+    history.push("/profile");
+  };
 
   return (
     <div className={classes.root}>
@@ -62,9 +71,15 @@ export const NavbarHomeScreen = () => {
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
-            <Avatar variant="square" className={classes.square}>
-              K
-            </Avatar>
+            <div>
+              <Avatar
+                variant="square"
+                className={classes.square}
+                onClick={goToProfile}
+              >
+                K
+              </Avatar>
+            </div>
           </div>
         </Toolbar>
       </AppBar>
