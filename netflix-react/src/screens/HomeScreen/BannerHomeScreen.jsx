@@ -8,21 +8,20 @@ export const BannerHomeScreen = () => {
 
   useEffect(() => {
     axios.get(requests.fetchTrending).then(function (response) {
-      // handle success
-      // console.log(
-      //   response.data.results[
-      //     Math.floor(Math.random() * response.data.results.length) + 1
-      //   ]
-      // );
       setBanner(
         response.data.results[
           Math.floor(Math.random() * response.data.results.length) + 1
         ]
       );
     });
-  }, [banner]);
+  }, []);
 
   console.log(banner);
+
+  const truncate = (text) => {
+    console.log(text + "to jest text");
+    return text?.length > 150 ? text.substring(0, 150) + "..." : text;
+  };
 
   return (
     <>
@@ -30,16 +29,16 @@ export const BannerHomeScreen = () => {
         className="banner"
         style={{
           backgroundSize: "cover",
-          backgroundImage: `url("https://image.tmdb.org/t/p/original/${banner?.backdrop_path}")`,
+          backgroundImage: `url("https://image.tmdb.org/t/p/original/${banner.backdrop_path}")`,
         }}
       >
         <div className="inside-banner">
-          <h1 className="title-banner">{banner}</h1>
+          <h1 className="title-banner">{banner.title}</h1>
           <div className="buttons-banner">
             <button className="button-banner">Play</button>
             <button className="button-banner">Add to list</button>
           </div>
-          <h2 className="description-banner">description</h2>
+          <h2 className="description-banner">{truncate(banner.overview)}</h2>
         </div>
       </div>
     </>

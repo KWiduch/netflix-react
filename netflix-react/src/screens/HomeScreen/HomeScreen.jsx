@@ -1,12 +1,25 @@
 import React from "react";
+import { requests } from "../../components/constants/Requests";
 import { BannerHomeScreen } from "./BannerHomeScreen";
 import { NavbarHomeScreen } from "./NavbarHomeScreen";
+import { RowHomeScreen } from "./RowHomeScreen";
+import "./HomeScreen.css";
 
 export const HomeScreen = () => {
   return (
-    <div>
+    <div className="container">
       <NavbarHomeScreen />
       <BannerHomeScreen />
+      <RowHomeScreen title="Comedy" fetchUrl={requests.fetchComedy} />
+      <RowHomeScreen title="Action" fetchUrl={requests.fetchAction} />
+      <RowHomeScreen title="Horror" fetchUrl={requests.fetchHorror} />
+      <RowHomeScreen title="Top rated" fetchUrl={requests.fetchTopRated} />
+
+      <RowHomeScreen
+        title="Documentaries"
+        fetchUrl={requests.fetchDocumentaries}
+      />
+      <RowHomeScreen title="Romance" fetchUrl={requests.fetchRomance} />
     </div>
   );
 };

@@ -63,7 +63,7 @@ export const NavbarHomeScreen = () => {
               <SearchIcon />
             </div>
             <Avatar variant="square" className={classes.square}>
-              xD
+              K
             </Avatar>
           </div>
         </Toolbar>
