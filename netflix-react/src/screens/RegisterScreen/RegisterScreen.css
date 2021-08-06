@@ -1,0 +1,38 @@
+.container-register {
+  height: 100vh;
+  background-position: center center;
+  position: relative;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.288);
+  color: white;
+}
+
+.nav-register {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.title-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40vh;
+  margin-bottom: 20px;
+}
+
+.subTitle-register {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
