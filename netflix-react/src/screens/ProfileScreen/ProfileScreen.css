@@ -1,0 +1,14 @@
+.container {
+  background-color: rgb(26, 25, 25);
+  height: 100vh;
+}
+.top-card {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+}

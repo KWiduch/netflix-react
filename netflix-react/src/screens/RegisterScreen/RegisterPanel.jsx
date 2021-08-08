@@ -23,6 +23,7 @@ export const RegisterPanel = () => {
   const reapetPasswordRef = useRef(null);
   const classes = useStyles();
   const [loginPanel, setLoginPanel] = useState(false);
+  const [error, setError] = useState(null);
 
   const loginPanelHandler = () => {
     setLoginPanel(true);
@@ -38,12 +39,15 @@ export const RegisterPanel = () => {
         )
         .then((authUser) => {
           console.log(authUser);
+          emailRef.current.value = "";
+          passwordRef.current.value = "";
+          reapetPasswordRef.current.value = "";
         })
         .catch((error) => {
           alert(error.message);
         });
     } else {
-      console.log("passwords not matching");
+      setError("passwords not matching");
     }
   };
 
@@ -88,6 +92,7 @@ export const RegisterPanel = () => {
                 Login in now.
               </div>
             </div>
+            {error ? <div className="alert">{error}</div> : <></>}
           </form>
         </div>
       )}

@@ -55,3 +55,16 @@ form {
 .footer-link:hover {
   color: red;
 }
+
+.alert {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ffef62;
+  color: black;
+  height: 38px;
+  border: solid black 1px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

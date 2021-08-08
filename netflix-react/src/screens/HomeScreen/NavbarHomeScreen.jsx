@@ -10,6 +10,8 @@ import Avatar from "@material-ui/core/Avatar";
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../features/userSlice";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,6 +50,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const NavbarHomeScreen = () => {
+  const user = useSelector(selectUser);
+  const userMail = user.email;
   const classes = useStyles();
   let history = useHistory();
   const [navBackground, setNavBackground] = useState("appBarTranspartent");
@@ -71,10 +75,6 @@ export const NavbarHomeScreen = () => {
 
   const refreshPage = () => {
     window.location.reload(false);
-  };
-
-  const goToProfile = () => {
-    history.push("/profile");
   };
 
   return (
@@ -112,9 +112,9 @@ export const NavbarHomeScreen = () => {
               <Avatar
                 variant="square"
                 className={classes.square}
-                onClick={goToProfile}
+                onClick={() => history.push("/profile")}
               >
-                K
+                {userMail.charAt(0).toUpperCase()}
               </Avatar>
             </div>
           </div>
