@@ -22,7 +22,6 @@ This project is a front end clone of Netflix. It was created with React. It uses
 - User can change email in profile section //todo
  ###
 ![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/homescreen.PNG)
-![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/homescreen_phone.PNG)
 ![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/startingScreen.PNG)
 ![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/registerScreen.PNG)
 
