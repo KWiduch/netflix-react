@@ -20,12 +20,12 @@ This project is a front end clone of Netflix. It was created with React. It uses
 - User can click on a movie and a modal will pop up //todo
 - The webpage adapts to any screen size. 
 - User can change email in profile section //todo
-
+<br>
 ![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/homescreen.PNG)
 ![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/homescreen_phone.PNG)
-![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/startingScreen.jpg)
+![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/startingScreen.PNG)
 ![picture](https://github.com/KWiduch/netflix-react/blob/develop/netflix-react/public/image/registerScreen.PNG)
-
+</br>
 
 
 
