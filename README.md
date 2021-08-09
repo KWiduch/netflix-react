@@ -21,7 +21,7 @@ This project is a front end clone of Netflix. It was created with React. It uses
 - The webpage adapts to any screen size. 
 - User can change email in profile section //todo
 
-![picture](https://github.com/KWiduch/netflix-react/blob/main/netflix-react/public/1.PNG)
+![picture](https://github.com/KWiduch/netflix-react/blob/main/netflix-react/public/image/logo-netflix.png)
 ![picture](https://github.com/KWiduch/netflix-react/blob/main/netflix-react/public/2.PNG)
 ![picture](https://github.com/KWiduch/netflix-reactt/blob/main/netflix-react/public/3.PNG)
 ![picture](https://github.com/KWiduch/netflix-react/blob/main/netflix-react/public/4.PNG)
