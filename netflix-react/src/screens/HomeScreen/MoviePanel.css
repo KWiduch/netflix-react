@@ -1,0 +1,13 @@
+.movie-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  margin: auto;
+  width: 70vw;
+  height: 80vh;
+}

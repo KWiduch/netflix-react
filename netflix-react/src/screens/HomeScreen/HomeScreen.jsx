@@ -4,12 +4,14 @@ import { BannerHomeScreen } from "./BannerHomeScreen";
 import { NavbarHomeScreen } from "./NavbarHomeScreen";
 import { RowHomeScreen } from "./RowHomeScreen";
 import "./HomeScreen.css";
+import { MoviePanel } from "./MoviePanel";
 
 export const HomeScreen = () => {
   return (
     <div className="container">
       <NavbarHomeScreen />
       <BannerHomeScreen />
+      <MoviePanel />
       <RowHomeScreen title="Comedy" fetchUrl={requests.fetchComedy} />
       <RowHomeScreen title="Action" fetchUrl={requests.fetchAction} />
       <RowHomeScreen title="Horror" fetchUrl={requests.fetchHorror} />
