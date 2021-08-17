@@ -9,18 +9,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const MoviePanel = () => {
+export const MoviePanel = ({ setSwitcher, key }) => {
   const classes = useStyles();
+  const hideMoviePanel = () => {
+    setSwitcher(false);
+  };
   return (
     <>
       <div className="movie-container">
         <div className="exit">
-          <IconButton className={classes.exitIcon}>
-            <CloseIcon
-              // style={{ color: green[500] }}
-              className={classes.exitIcon}
-            />
+          <IconButton onClick={hideMoviePanel} className={classes.exitIcon}>
+            <CloseIcon className={classes.exitIcon} />
           </IconButton>
+          <div className="banner">foteczka</div>
+          <div className="banner">{key}</div>
         </div>
       </div>
     </>
